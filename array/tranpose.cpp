@@ -21,7 +21,7 @@ int main(){
     }
       for(int i = 0; i<k;i++){
         for(int j = 0; j<l ;j++){
-            std::cout<<b[i][j]<<" ";
+            std::cout<<b[i][j];
         }
     }
 }
