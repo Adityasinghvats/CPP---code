@@ -7,7 +7,7 @@ int main(){
         std::cin>>element;
     }
     // for(datatype elementindex : arrayname) -for each loop 
-    // here a new element named i is created with each trenversal of loop and a copy og original array element is stored 
+    // here a new element named i is created with each trenversal of loop and a copy of original array element is stored 
     for(int i : arr){
         std::cout<<i<<" ";
     }
