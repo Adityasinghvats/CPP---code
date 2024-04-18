@@ -11,4 +11,6 @@ int main(){
         second = next;
     }
     cout<<next;
+    // space complexity o(1)
+    // time complexity o(n)
 }
