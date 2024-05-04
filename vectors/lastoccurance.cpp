@@ -20,7 +20,7 @@ int main(){
             occurence=i;
         }
     }
-    cout<<"The last occurence of "<<trgt<<"is "<<occurence;
+    cout<<"The last occurence of "<<trgt<<" is "<<occurence;
 
     // more efficient to start from end and come back to star
      for(int i = v.size()-1;i>=0; i--){
@@ -30,5 +30,5 @@ int main(){
         }
     }
 
-    cout<<"The last occurence of "<<trgt<<"is "<<occurence;
+    cout<<"The last occurence of "<<trgt<<" is "<<occurence;
 }
