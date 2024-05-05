@@ -1,0 +1,2 @@
+Assignment operators and Ternary operators go from right to left
+2 += 3 += 5  then <- is the direction
