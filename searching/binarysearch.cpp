@@ -1,9 +1,5 @@
 #include<iostream>
 using namespace std;
-int findMid(int startidx, int endidx){
-    int mididx = ((startidx+endidx)/2)+1;
-    return mididx;
-}
 int binarySearch(int arr[],int target,int size){
     int start = 0;
     int end = size - 1 ;

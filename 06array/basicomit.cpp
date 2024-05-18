@@ -2,7 +2,7 @@
 int main(){
     int arr[5];
      // input using for each loop
-    //  possible to take input using ampersand operator to reference to same memory location as eaxh element of array
+    //  possible to take input using ampersand operator to reference to same memory location as each element of array
     for(int &element : arr){
         std::cin>>element;
     }
