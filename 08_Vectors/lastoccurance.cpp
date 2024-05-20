@@ -13,7 +13,7 @@ int main(){
 
 
 
-    int occurence;
+    int occurence = -1;
     // used to move from 1 to last 
     for(int i = 0;i<v.size(); i++){
         if(v[i]==trgt){
@@ -22,7 +22,7 @@ int main(){
     }
     cout<<"The last occurence of "<<trgt<<" is "<<occurence;
 
-    // more efficient to start from end and come back to star
+    // more efficient to start from end and come back to start
      for(int i = v.size()-1;i>=0; i--){
         if(v[i]==trgt){
             occurence=i;

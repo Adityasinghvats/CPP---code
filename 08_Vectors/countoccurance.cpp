@@ -21,7 +21,5 @@ int main(){
         }
     }
     cout<<"Element is present "<<count<<" times.";
-   
-
     
 }

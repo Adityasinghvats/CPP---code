@@ -15,6 +15,12 @@ int main(){
      cout<<"Size "<<my.size()<<endl;
      cout<<"Capacity "<<my.capacity()<<endl;
 
+    my.push_back(3);
+     cout<<"Size "<<my.size()<<endl;
+     cout<<"Capacity "<<my.capacity()<<endl;
+
+    // Capacity increases in multiples of 2 becuse each time double the array is created
+    // Even if we do pop_back the capacity is not decreased only sixe decreases because memory has already bei allocated
     my.resize(10);
       cout<<"Size "<<my.size()<<endl;
       cout<<"Capacity "<<my.capacity()<<endl;
