@@ -1,5 +1,7 @@
 #include<iostream>
 #include<vector>
+#include<algorithm>
+#include "../../../../../../MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/algorithmfwd.h"
 using namespace std;
 int main(){
     vector<int> v;
@@ -29,6 +31,10 @@ int main(){
         v[i] = v[j];
         v[j] = temp;
     }
+    // Inbuilt function
+    reverse(v.begin(),v.end());
+
+
     for(int i=0;i<v.size();i++){
         cout<<v.at(i)<<" ";
     }
