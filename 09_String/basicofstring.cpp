@@ -9,6 +9,7 @@
 // slower than char array
 using namespace std;
 int main(){
+    // String as a data type
     string str = "hello";
     // string str1("Kumar");
     // std::cout<<str<<str1;
@@ -19,6 +20,7 @@ int main(){
     // reverse(str.begin(),str.end());
     // cout<<str;
     // substr(position,length)
-    cout<<str.substr(0,3);
+    cout<<str.substr(0,3)<<endl;
+    cout<<sizeof(str);
 
 } 
