@@ -4,6 +4,8 @@ int binarySearch(int arr[],int target,int size){
     int start = 0;
     int end = size - 1 ;
     while(start<=end){
+        // it is done to prevent overflow where mid becomes greater than range of int
+        // /by addition of 2 max int values
         int mid = start+(end-start)/2;
         if(arr[mid]==target) return mid;
         if(arr[mid]<target){
