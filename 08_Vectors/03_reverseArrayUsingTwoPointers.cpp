@@ -1,7 +1,4 @@
-#include<iostream>
-#include<vector>
-#include<algorithm>
-#include "../../../../../../MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/algorithmfwd.h"
+#include<bits/stdc++.h>
 using namespace std;
 int main(){
     vector<int> v;
