@@ -8,7 +8,7 @@ void change(int brr[],int size){
     }cout<<endl;
 }
 // By default it follows pass by reference
-// /The original array is passed and we can make changea toorginal array as well
+// /The original array is passed and we can make changes to orginal array as well
 int main(){
     int arr[] = {1,2,4,3,7,2,9,6};
     int size = sizeof(arr)/sizeof(arr[0]);
