@@ -9,8 +9,16 @@ void subarray(int arr[],vector<int> v,int n,int idx){
         return;
     }
     subarray(arr,v,n,idx+1);
-    v.push_back(arr[idx]);
-    subarray(arr,v,n,idx+1);
+    // Right subtree push back is done if vector is empty
+    if(v.size()==0){
+        v.push_back(arr[idx]);
+        subarray(arr,v,n,idx+1);
+    }
+    // Right subtree push back done only if last element of vector is equal to the element in array just before idx
+    else if(arr[idx-1]==v[v.size()-1]){
+        v.push_back(arr[idx]);
+        subarray(arr,v,n,idx+1);
+    }
 }
 int main(){
     int arr[] = {1,2,3,4};
