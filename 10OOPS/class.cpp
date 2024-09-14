@@ -10,12 +10,17 @@ class Player{
         cout<<name;
     }
 
-    // Secondary Constructor
+    // Default constructor so that we can use manuaul way as well
+    Player(){  
+    }
+    // Note:- Every class can have multiple constructors
+
+    // Parametrized Constructor
     // Player(int id,int score,string name){
     //     this->id = id;
     //     this->name = name;
     //     this->score = score;
-    // }
+    // }        
 };
 int main(){
     // Amit is an object of class player
