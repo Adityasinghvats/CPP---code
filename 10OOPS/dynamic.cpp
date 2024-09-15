@@ -10,6 +10,9 @@ public:
         this->score = score;
         this->name = name;
     }
+    ~Player(){
+        cout<<"Destructor Worked!";
+    }
 };
 int main(){
     // int* ptr = new int(456);
@@ -17,4 +20,5 @@ int main(){
 
     Player* p1 = new Player(1,234,"Aditya");
     cout<<p1->id<<" "<<p1->name<<" "<<p1->score<<endl;
+    delete p1;
 }
