@@ -22,7 +22,7 @@ int main(){
         cout<<*(it)<<endl;
     }
 
-// for each loop
+    // for each loop
     for(auto it:v1){
         cout<<it<<endl;
     }
