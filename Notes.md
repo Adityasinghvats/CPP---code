@@ -13,3 +13,6 @@
 
 ---
 # Supports Multilevel and Multiple inheritance and Virtual Base Classes
+
+---
+# and (&&) , or(||) , not(!)
