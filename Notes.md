@@ -16,3 +16,7 @@
 
 ---
 # and (&&) , or(||) , not(!)
+
+---
+# Convert array to vector
+- If array is `int arr[] = {}` of size `n` then `vector<int> v(arr,arr+n)`
