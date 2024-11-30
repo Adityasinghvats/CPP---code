@@ -1,0 +1,1 @@
+Null has no next pointer , it will  give null pointer exception on deferencing it.
