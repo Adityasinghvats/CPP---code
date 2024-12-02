@@ -43,7 +43,7 @@ class Linkedlist{
         else{
            Node *t = new Node(val);
            Node *temp = head;
-           for(int i=0;i<idx;i++){
+           for(int i=1;i<=idx-1;i++){
             temp = temp->next;
            }
            t->next = temp->next;
@@ -66,6 +66,42 @@ class Linkedlist{
             return temp->data;
         }
     }
+    void deleteAtHead(){
+        if(size==0){
+            cout<<"List is empty"<<endl;
+            return;
+        }
+        head = head->next;
+        size--;
+    }
+    void deleteAtTail(){
+        Node *temp = head;
+        while(temp->next != tail){
+            temp = temp->next;
+        }
+        temp->next = NULL;
+        tail = temp;
+        size--;
+    }
+    void deleteAtIndex(int idx){
+        if(size==0){
+            cout<<"List is empty"<<endl;
+            return;
+        }
+        else if(idx==0) return deleteAtHead();
+        else if(idx == size-1) return deleteAtTail();
+        else if(idx<0 || idx>=size) {
+            cout<<"Index out of bound"<<endl;
+            return;
+        }else{
+            Node *temp = head;
+            for(int i=1;i<=idx-1;i++){
+                temp = temp->next;
+            }
+            temp->next = temp->next->next; //skip the node to be deleted
+            size--;
+        }
+    }
     void display(){
         Node *temp = head;
         if(temp  == NULL) cout<<"Linkedlist is empty!";
@@ -78,13 +114,18 @@ class Linkedlist{
 };
 int main(){
     Linkedlist ll;
-    ll.display();
+    // ll.display();
     ll.insertAtEnd(10);
     ll.insertAtEnd(12);
     ll.insertAtEnd(90);
     ll.insertAtEnd(34);
     ll.insertAtStart(43);
-    ll.insertAt(99,3);
+    ll.display();
+    ll.insertAt(99,2);
+    ll.display();
+    // ll.deleteAtHead();
+    // ll.display();
+    ll.deleteAtIndex(2);
     ll.display();
     // cout<<ll.size;
     cout<<ll.getAtIndex(4);
