@@ -14,3 +14,7 @@
     Derived d; 
     b = &d; 
     b->show
+
+### Only const members can be intiliased in-class.
+
+### Virtual functions make sure correct function is called for am object, regardless of pointer used for calling it.
