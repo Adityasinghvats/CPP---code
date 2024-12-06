@@ -17,4 +17,4 @@
 
 ### Only const members can be intiliased in-class.
 
-### Virtual functions make sure correct function is called for am object, regardless of pointer used for calling it.
+### Virtual functions make sure correct function is called for an object, regardless of pointer used for calling it.

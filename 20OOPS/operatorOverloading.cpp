@@ -17,7 +17,9 @@ class Fraction{
         Fraction ans(num,den);
         return ans;
     }
-    Fraction operator*(Fraction f){
+    // <datatype> operator <symbol> (object of same datatype)
+    // cannot overload (.)(? :)(sizeof)(::)
+    Fraction operator * (Fraction f){
         int num = this->num*f.num;
         int den = this->den*f.den;
         Fraction ans(num,den);
@@ -33,4 +35,6 @@ int main(){
     f3.print();
     Fraction prod = f2 * f3;
     prod.print();
+    Fraction prod2 = f1 * f2 * f3; // multiplies one by one following C++ precedence rule
+    prod2.print();
 }

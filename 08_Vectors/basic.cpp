@@ -3,7 +3,15 @@
 using namespace std;
 // vectors are dynamic arrays increase or decrease with need
 // declaration
+void newdec(){
+    vector<int> arr {1,2,3,4,5};
+    for(int i:arr){
+        cout<<i<<" ";
+    }
+    cout<<endl;
+}
 int main(){
+    newdec();
     vector<int> first(5);
     // vector<datatype> name(size optional)
     // size

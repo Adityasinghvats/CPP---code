@@ -14,14 +14,14 @@ class Student{
 class Topper:public Student{
     public:
     int rank;
-    void sound(){
+    void sound() override{
         cout<<"HELLO"<<endl;
     }
 };
 class Losser:public Student{
     public:
     int rank;
-    void sound(){
+    void sound() override{
         cout<<"HOWAREYOU!"<<endl;
     }
 };

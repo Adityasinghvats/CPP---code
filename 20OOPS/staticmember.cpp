@@ -14,7 +14,7 @@ public:
         id++;
     }
 };
-int Player::id = 0;
+int Player::id = 0; //scope resolution
 int main(){
    Player* p1 = new Player(123,"Aditya");
    Player* p2 = new Player(123,"Aditya");
