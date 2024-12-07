@@ -10,6 +10,4 @@ int main(){
     string description = "Known as \"best\" tea";
 
     cout << description << endl;
-
-
 }
