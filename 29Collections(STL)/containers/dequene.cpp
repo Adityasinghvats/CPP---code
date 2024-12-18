@@ -2,5 +2,5 @@
 using namespace std;
 int main(){
     deque<int> dq;
-    // all functions of list and vextor
+    // all functions of list and vector
 }
