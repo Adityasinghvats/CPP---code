@@ -14,17 +14,33 @@ class Node{
         this->right = nullptr;
     }
 };
-void levelOrderQueue(Node *root){
-    queue<Node*> q;
-    q.push(root);
-    while(q.size()>0){
-        Node* temp = q.front();
-        q.pop();
-        cout<<temp->val<<" ";
-        if(temp->left!=nullptr) q.push(temp->left);
-        if(temp->right!=nullptr) q.push(temp->right);
-    }
-    cout<<endl;
+
+void leftBoundary(Node *root){
+    if(root==nullptr) return;
+    //leafnode
+    if(root->left==nullptr && root->right==nullptr) return;
+    cout<<root->val<<" ";
+    leftBoundary(root->left);
+    if(root->left == nullptr) leftBoundary(root->right);
+}
+void leafNode(Node* root){
+    if(root==nullptr) return;
+    if(root->left==nullptr && root->right==nullptr) cout<<root->val<<" ";
+    leafNode(root->left);
+    leafNode(root->right);
+}
+void rightBoundary(Node* root){
+    if(root==nullptr) return;
+    //leafnode
+    if(root->left==nullptr && root->right==nullptr) return;
+    rightBoundary(root->right);
+    if(root->right == nullptr) rightBoundary(root->left);
+    cout<<root->val<<" ";
+}
+void boundaryTraversal(Node* root){
+    leftBoundary(root);
+    leafNode(root);
+    rightBoundary(root->right);
 }
 Node* createTree(vector<int> &v){
     queue<Node*> q;
@@ -53,8 +69,8 @@ Node* createTree(vector<int> &v){
     return root;
 }
 int main(){
-    vector<int> v = {1,2,3,4,5,INT_MIN,6,INT_MIN,INT_MIN,7,8,9,INT_MIN,INT_MIN,11}; //INT_MIN is used to represent NULL
+    vector<int> v = {1,2,3,4,5,INT_MIN,6,INT_MIN,7,8,9,10,INT_MIN}; //INT_MIN is used to represent NULL
     Node* root = createTree(v);
-    levelOrderQueue(root);
+    boundaryTraversal(root);
     return 0;
 }
