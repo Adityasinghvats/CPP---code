@@ -3,6 +3,7 @@
 #include<vector>
 
 //find predecsssor and succcessor of a BST
+// pred or successor can have at max 1 child node
 using namespace std;
 class Node{
     public:
@@ -41,7 +42,7 @@ Node* createTree(vector<int> &v){
     }
     return root;
 }
-Node* finfPredecessor(Node* root){
+Node* findPredecessor(Node* root){
     if(root->left==nullptr) return nullptr;
     Node* pred = root->left;
     while(pred->right != nullptr){
@@ -49,20 +50,20 @@ Node* finfPredecessor(Node* root){
     }
     return pred;
 }
-Node* finfSuccessor(Node* root){
+Node* findSuccessor(Node* root){
     if(root->right==nullptr) return nullptr;
-    Node* pred = root->right;
-    while(pred->left != nullptr){
-        pred = pred->left;
+    Node* suc = root->right;
+    while(suc->left != nullptr){
+        suc = suc->left;
     }
-    return pred;
+    return suc;
 }
 int main(){
     vector<int> v = {10,5,20,2,8,15,25,INT_MIN,4,INT_MIN,INT_MIN,12,INT_MIN,INT_MIN,INT_MIN,INT_MIN}; //INT_MIN is used to represent NULL
     Node* root = createTree(v);
-    Node* pred = finfPredecessor(root->left->right);
+    Node* pred = findPredecessor(root);
     cout<<pred->val<<endl;
-    Node* succ = finfSuccessor(root->left->right);
+    Node* succ = findSuccessor(root);
     cout<<succ->val<<endl;
     return 0;
 }
