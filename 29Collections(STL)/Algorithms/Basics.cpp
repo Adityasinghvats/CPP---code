@@ -1,12 +1,15 @@
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
-    // In descending order
-    sort(v.begin(),v.end(),greater<int>);
-
     // Custom sorting comparator
-    bool comp(pair<int,int> p1, pair<int,int>p2){
-        
-    }
-    sort(a,a+n,comp);
+    struct Compare
+    {
+        bool operator()(const pair<int,int> &p1,const pair<int,int> &p2){
+            return p1.first>p2.first;
+        }
+    };
+
+    // In descending order
+    vector<int> v;
+    sort(v.begin(),v.end(), Compare());
 }
