@@ -1,5 +1,6 @@
 #include<iostream>
 #include<unordered_set>
+#include<set>
 using namespace std;
 int main(){
     unordered_set<int> us;
@@ -17,7 +18,17 @@ int main(){
          */
         cout<<"exists"<<endl;
     }
-    for(int ele : us){//prints in random order and only unique elements
+    // for(int ele : us){//prints in random order and only unique elements
+    //     cout<<ele<<" ";
+    // }
+    
+    set<int> st;
+    st.insert(10);
+    st.insert(20);
+    st.insert(23);
+    st.insert(32);
+    st.insert(32);
+    for(int ele : st){
         cout<<ele<<" ";
     }
 }
