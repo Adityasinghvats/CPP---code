@@ -6,6 +6,7 @@ vector<vector<char>> grid;
 vector<vector<string>> result;
 
 bool canPlaceQueen(int row, int col, int n){
+    //check for bottom attack
     for(int i=row-1;i>=0;i--){
         if(grid[i][col]=='Q') return false;
     }
