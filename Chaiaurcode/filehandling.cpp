@@ -22,7 +22,7 @@ int main(){
     myFile.open("file1.txt",ios::in); //read
     if(myFile.is_open()){
         string line;
-        while(getline(myFile,line)){ //here getline reads a line from myFile and stores into string line
+        while(getline(myFile, line)){ //here getline reads a line from myFile and stores into string line
             cout<<line<<"\n";
         }
         myFile.close();
