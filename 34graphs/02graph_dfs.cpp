@@ -1,6 +1,8 @@
 #include<bits/stdc++.h>
 using namespace std;
 //traversal for cylcic graphs as well using visited list
+//TC o(v+e)
+//SC recursive stack
 vector<list<int>> graph;
 unordered_set<int> visited;
 int v;//no of vertices
