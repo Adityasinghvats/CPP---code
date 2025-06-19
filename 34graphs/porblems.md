@@ -1,3 +1,0 @@
-- LC 797
-- LC 733 Flood fill algorithm
-- LC 1791 Find center of star
