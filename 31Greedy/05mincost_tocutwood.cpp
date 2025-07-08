@@ -20,7 +20,7 @@ ll minCostToGrid(int m, int n, vector<ll>& x, vector<ll> &y){
             v++;
         }else{
             ans += y[h] * hz;
-            vr++; //incrment cuts
+            vr++; //increment cuts 
             h++; //increment pointer
         }
     }
