@@ -5,3 +5,6 @@
 - LC 133
 - LC 1034
 - LC 200 (BFS and DFS)
+- LC 417 (Multisource BFS , DFS) (Start with multiple sources, read level-1 nodes of all sources then, read level-2)
+- LC 994 (Multisocurce bfs)
+- LC 542 01 Matrix
