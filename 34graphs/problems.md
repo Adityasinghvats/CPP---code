@@ -10,3 +10,6 @@
 - LC 542 01 Matrix
 - LC 1197
 - LC 130
+- LC 286
+- LC 934 (There are 2 islands exactly with 1 and now we need to find shortest bridge between them,
+use bfs using all the edges of 1 island as multisource bfs and touch other island, mark one island as something else like -1 to differentiate between both islands, mark second tarvelled box for each box a 2 and then 3rd travelled as 3 to keep count, as soon as we reach -1 that is edge of other island , jsut return thr count of box)

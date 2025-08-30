@@ -20,3 +20,7 @@
 ---
 # Convert array to vector
 - If array is `int arr[] = {}` of size `n` then `vector<int> v(arr,arr+n)`
+
+--- 
+# Very important to identify problems if they can solve dusing greedy or DP
+- Because in most cases DP questions cannot be solved using Greedy.
