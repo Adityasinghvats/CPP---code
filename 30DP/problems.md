@@ -1,3 +1,5 @@
 - LC-746
 - Tip :- Try to go from n to 0 when trying to adding memoization using DP.
 - LC-62
+- LC-63 (Mark -1 for obstacles) (Remember to intiliaze first row and col in 2D tabular DP)
+- LC-1137
