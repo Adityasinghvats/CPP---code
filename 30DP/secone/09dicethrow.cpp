@@ -3,6 +3,7 @@
 #define ll long long int
 using namespace std;
 vector<ll> dp(1000005, -1);
+// TC O(6^n)
 ll getWays(int n)
 {
     if (n == 0)
